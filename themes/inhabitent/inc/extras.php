@@ -48,7 +48,7 @@ add_filter('login_headertitle', 'inhabitent_login_title');
 
 
 // link login logo to homepage
-function home_page_login_url() {
+function my_login_logo_url() {
     return home_url();
 }
-add_filter( 'login_headertitle', 'home-page-login-url' );
+add_filter( 'login_headerurl', 'my_login_logo_url' );
