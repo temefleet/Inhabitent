@@ -5,12 +5,26 @@
 /* Front page */
 
 body.page-template.default {
-  .site-content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-  }
+  
 }
 
+
+// Find us -------------------------------------------
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) {
+  .site-content {
+  display: grid;
+  grid-template-columns: 73% 27%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+    .content-area {
+      border-right: 1px solid #e1e1e1;
+      padding-right: 5%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
 
 
 
@@ -27,7 +41,7 @@ body.page-template-about {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -38,5 +52,13 @@ body.page-template-about {
     p {
       margin-bottom: 1.5rem;
     }
+  }
+}
+
+// 404 ---------------------------------------
+
+.widget {
+  h2 {
+    font-size: 1.5rem;
   }
 }

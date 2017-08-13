@@ -25,6 +25,7 @@
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
+							<img src="../../wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo">
 						</a>
 						<!-- <p class="site-description"><?php //bloginfo( 'description' ); ?></p> -->
 					</div><!-- .site-branding -->

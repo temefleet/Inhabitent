@@ -7,15 +7,10 @@
 a {
 	color: $color__link;
 	text-decoration: none;
-	text-transform: uppercase;
 
 	&:visited {
 		color: $color__link;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
+		text-decoration: none;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -38,9 +33,9 @@ a {
 
 
 		li {
-			display: inline;
+			display: inline-block;
 			padding-left: 1.5rem;
-			
+
 		}
 
 		a:hover,
@@ -50,7 +45,7 @@ a {
 	}
 	
 	a {
-		text-decoration: none;
+		text-transform: uppercase;
 	}
 
 	// .current_page_item > a,
@@ -84,12 +79,12 @@ a {
 	}
 
 	.nav-previous {
-		float: left;
+		// float: left;
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
+		// float: right;
 		text-align: right;
 		width: 50%;
 	}

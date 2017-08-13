@@ -40,8 +40,9 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	background-color: #f4f4f4;
+	border: 1px solid #e1e1e1;
+	border-radius: 0;
 
 	&:focus {
 		color: #111;
@@ -53,10 +54,21 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: .3rem;
 }
 
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	padding-bottom: .75rem;
+	margin: 0;
+}
+
+input[type=search] {
+	box-sizing: content-box;
 }

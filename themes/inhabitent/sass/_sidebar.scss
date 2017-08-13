@@ -1,4 +1,21 @@
-#secondary.widget-area {
-  padding-left: 5%;
-  padding-right: 10px;
+.widget-area {
+  padding-left: 20%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+  .widget {
+    margin: 0 0 3rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
