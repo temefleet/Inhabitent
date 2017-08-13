@@ -1,6 +1,10 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$base__width: 1120px;
+$base__border-dashed: 1px dashed #c8c8c8;
+$base__border-solid: 1px solid #e1e1e1;
+$base__spacing: 1.5rem;
 
 // Colors
 
@@ -19,10 +23,34 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color__main_background: #ffffff ;
+$color__green_brand: #248A83 ;
+$color__purple_brand: #2f1339 ;
+$color__orange_brand: #d99054 ; //Rename later
+$color__yellow_brand: #f0e4d1 ;
+$color__light_grey_brand: #a1a1a1 ;
+$color__medium_grey_brand: #808080 ;
+
 // Typography
 
-$font__main: sans-serif;
+$font__main: "Merriweather", serif;
+$font__accent: "Novecento Sans Wide", sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+$font__letter-spacing: 2px;
+$font__line-height: 1.75rem;
+$font__line-height-body: 1.5rem;
+$font__line-height-pre: 1.6rem;
+$font__size: 16px;
+$font__color: #404040;
+
+
+// Colors:
+
+// The main background colour is #ffffff
+// The HEX code for the green brand colour is #248A83
+// The HEX code for the purple brand colour is #2f1339
+// The HEX code for the orange brand colour is #d99054
+// The HEX code for the yellow brand colour is #f0e4d1
+// The HEX code for the light grey brand colour is #a1a1a1
+// The HEX code for the medium grey brand colour is #808080

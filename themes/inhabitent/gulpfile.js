@@ -10,16 +10,16 @@ var gulp = require('gulp'),
     eslint = require('gulp-eslint'),
     browserSync = require('browser-sync');
 
-var plumberErrorHandler = {
-    errorHandler: notify.onError({
-        title: 'Gulp',
-        message: 'Error: <%= error.message %>'
-    })
-};
+// var  = {
+//     errorHandler: notify.onError({
+//         title: 'Gulp',
+//         message: 'Error: <%= error.message %>'
+//     })
+// };
 
 gulp.task('sass', function () {
     gulp.src('./sass/style.scss')
-        .pipe(plumber(plumberErrorHandler))
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer({

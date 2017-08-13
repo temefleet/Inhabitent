@@ -222,6 +222,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento Sans Wide';
+  src: url("../../fonts/Novecentosanswide-Demibold.eot");
+  src: url("../../fonts/Novecentosanswide-Demibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecentosanswide-Demibold.woff2") format("woff2"), url("../../fonts/Novecentosanswide-Demibold.woff") format("woff"), url("../../fonts/Novecentosanswide-Demibold.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Wide';
+  src: url("../../fonts/Novecentosanswide-Normal.eot");
+  src: url("../../fonts/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecentosanswide-Normal.woff") format("woff"), url("../../fonts/Novecentosanswide-Normal.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -231,14 +273,18 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Novecento Sans Wide", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
 
 /* Copy */
 p {
@@ -258,7 +304,7 @@ pre {
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
-  line-height: 1.6;
+  line-height: 1.6rem;
   margin-bottom: 1.6rem;
   max-width: 100%;
   overflow: auto;
@@ -280,6 +326,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+strong {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -296,7 +345,9 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  width: 100%;
+  margin: 0 auto; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -338,6 +389,10 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+i {
+  margin-right: 0.5rem;
+  font-size: 1.25rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -408,7 +463,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: royalblue;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -592,6 +650,14 @@ a {
 .bypostauthor {
   display: block; }
 
+div.site-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  width: 1120px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -651,6 +717,47 @@ object {
 
 .gallery-caption {
   display: block; }
+
+#secondary.widget-area {
+  padding-left: 5%; }
+
+#colophon.site-footer {
+  background: url("../../images/dark-wood@2x.png");
+  background-size: 512px 512px;
+  width: 100%; }
+
+.footer-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  grid-row-gap: 3rem;
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 3rem; }
+  .footer-content p, .footer-content a {
+    color: white;
+    margin-bottom: .5rem;
+    line-height: 1.75rem; }
+  .footer-content h3 {
+    color: #d99054;
+    text-transform: uppercase; }
+  .footer-content .text-logo {
+    text-align: right; }
+    .footer-content .text-logo img {
+      max-width: 50%;
+      padding-top: 1rem; }
+  .footer-content .copyright {
+    text-align: center;
+    grid-column: 1/4;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Wide", sans-serif;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+    .footer-content .copyright p {
+      margin: 0; }
 
 /*--------------------------------------------------------------
 # Page Templates

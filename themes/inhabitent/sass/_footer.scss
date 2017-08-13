@@ -1,0 +1,46 @@
+#colophon.site-footer {
+  background: url('../../images/dark-wood@2x.png');
+  background-size: 512px 512px;
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr auto;
+  grid-row-gap: 3rem;
+  width: $base__width;
+  margin: 0 auto;
+  padding-top: 3rem;
+
+  p, a {
+    color: white;
+    margin-bottom: .5rem;
+    line-height: 1.75rem;
+  }
+  h3 {
+    color: $color__orange_brand;
+    text-transform: uppercase;
+  }
+  .text-logo {
+    text-align: right;
+
+    img {
+      max-width: 50%;
+      padding-top: 1rem;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    grid-column: 1/4;
+    text-transform: uppercase;
+    font-family: $font__accent;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    p {
+      margin: 0;
+    }
+  }
+
+}
