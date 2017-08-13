@@ -20,7 +20,23 @@ body.page-template.default {
 // About ------------------------------------------------
 
 body.page-template-about {
-  .site-content {
-
+  .entry-header {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(#) no-repeat center bottom;
+    background-size: cover, cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .entry-content {
+    margin: 4rem auto;
+    max-width: 800px;
+    p {
+      margin-bottom: 1.5rem;
+    }
   }
 }
