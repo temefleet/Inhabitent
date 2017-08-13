@@ -3,3 +3,24 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+body.page-template.default {
+  .site-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+
+
+
+
+
+
+// About ------------------------------------------------
+
+body.page-template-about {
+  .site-content {
+
+  }
+}

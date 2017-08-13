@@ -465,8 +465,6 @@ textarea {
 a {
   color: royalblue;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -502,6 +500,9 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
+      .main-navigation ul ul a:hover,
+      .main-navigation ul ul a.focus {
+        text-decoration: underline; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -650,11 +651,7 @@ a {
 .bypostauthor {
   display: block; }
 
-div.site-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
+.site-content {
   width: 1120px;
   margin: 0 auto; }
 
@@ -719,7 +716,8 @@ object {
   display: block; }
 
 #secondary.widget-area {
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-right: 10px; }
 
 #colophon.site-footer {
   background: url("../../images/dark-wood@2x.png");
@@ -763,3 +761,8 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body.page-template.default .site-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr; }
