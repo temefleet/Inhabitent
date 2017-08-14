@@ -301,16 +301,16 @@ h2 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 4.5rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5rem; }
+  margin: 0 4.5rem; }
 
 address {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 4.5rem; }
 
 pre {
   background: #eee;
@@ -360,7 +360,7 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   width: 100%;
-  margin: 0 auto; }
+  min-height: 100vh; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -371,10 +371,10 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 4.5rem; }
 
 ul, ol {
-  margin: 0 0 1.5rem 3rem; }
+  margin: 0 0 4.5rem 9rem; }
 
 ul {
   list-style: disc; }
@@ -385,13 +385,13 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-left: 4.5rem; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5rem 1.5rem; }
+  margin: 0 4.5rem 4.5rem; }
 
 img {
   height: auto;
@@ -400,7 +400,7 @@ img {
   /* Adhere to container width. */ }
 
 table {
-  margin: 0 0 1.5rem;
+  margin: 0 0 4.5rem;
   width: 100%; }
 
 i {
@@ -526,7 +526,7 @@ a {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5rem;
+  margin: 0 0 4.5rem;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -576,12 +576,12 @@ a {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5rem; }
+  margin-right: 4.5rem; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5rem; }
+  margin-left: 4.5rem; }
 
 .aligncenter {
   clear: both;
@@ -601,7 +601,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 4.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -618,11 +618,37 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.post .entry-header {
+  line-height: 0;
+  position: relative; }
+  .post .entry-header .entry-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #248a83;
+    padding: .75rem 1.5rem;
+    margin-top: 2.25rem;
+    max-width: 75%; }
+    .post .entry-header .entry-title a {
+      color: #fff; }
+  .post .entry-header .entry-meta {
+    background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "Novecento Sans Wide", sans-serif;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase; }
+  .post .entry-header .entry-content {
+    margin-top: 0; }
+
 .sticky {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 4.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -634,11 +660,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 4.5rem 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5rem; }
+  margin: 0 0 4.5rem; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -674,7 +700,7 @@ object {
 
 /* Captions */
 .wp-caption {
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -688,7 +714,7 @@ object {
 
 /* Galleries*/
 .gallery {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 4.5rem; }
 
 .gallery-item {
   display: inline-block;
@@ -811,7 +837,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   width: 1120px; }
   body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content .content-area {
     border-right: 1px solid #e1e1e1;
-    padding-right: 5%;
+    padding-right: 7%;
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
@@ -839,3 +865,8 @@ body.page-template-about .entry-content {
 
 .widget h2 {
   font-size: 1.5rem; }
+
+.archive:not(.post-type-archive):not(.tax-product-type) .page-header, .search .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }

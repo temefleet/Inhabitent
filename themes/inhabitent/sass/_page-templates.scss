@@ -19,7 +19,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   width: 1120px;
     .content-area {
       border-right: 1px solid #e1e1e1;
-      padding-right: 5%;
+      padding-right: 7%;
       padding-top: 3rem;
       padding-bottom: 3rem;
     }
@@ -61,4 +61,13 @@ body.page-template-about {
   h2 {
     font-size: 1.5rem;
   }
+}
+
+
+// archive ---------------------------------
+
+.archive:not(.post-type-archive):not(.tax-product-type) .page-header, .search .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
 }

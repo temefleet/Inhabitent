@@ -4,6 +4,38 @@
 
 /* Posts and pages */
 
+.post .entry-header {
+	line-height: 0;
+	position: relative;
+	.entry-title {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: #248a83;
+		padding: .75rem 1.5rem;
+		margin-top: 2.25rem;
+		max-width: 75%;
+		a {
+			color: #fff;
+		}
+	}
+	.entry-meta {
+		background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "Novecento Sans Wide", sans-serif;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+	}
+	.entry-content {
+		margin-top: 0;
+	}
+	
+}
+
 .sticky {
 	display: block;
 }
