@@ -4,19 +4,22 @@
 
 /* Posts and pages */
 
-.post .entry-header {
+.post {
+	.entry-header {
 	line-height: 0;
 	position: relative;
-	.entry-title {
-		position: absolute;
-		left: 0;
-		top: 0;
-		background-color: #248a83;
-		padding: .75rem 1.5rem;
-		margin-top: 2.25rem;
-		max-width: 75%;
-		a {
+		.entry-title {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: #248a83;
+			padding: .75rem 1.5rem;
+			margin-top: 2.25rem;
+			max-width: 75%;
 			color: #fff;
+			a {
+				color: #fff;
+			}
 		}
 	}
 	.entry-meta {
@@ -28,14 +31,30 @@
     padding: 1rem 1.5rem;
     position: absolute;
     right: 0;
-    text-transform: uppercase;
+		text-transform: uppercase;
+		a {
+			color: #fff;
+		}
 	}
 	.entry-content {
 		margin-top: 0;
+		p {
+			margin: 2rem 0 0;
+		}
 	}
-	
 }
 
+.entry-footer {
+	font-family: "Novecento Sans Wide", sans-serif;
+	.cat-links, .tags-links {
+    display: inline-block;
+		text-transform: uppercase;
+		margin-top: 2rem;
+	}
+	.cat-links {
+		margin-right: 1.5rem;
+	}
+}
 .sticky {
 	display: block;
 }
@@ -51,12 +70,6 @@
 .single .byline,
 .group-blog .byline {
 	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
 }
 
 .page-links {
@@ -82,4 +95,29 @@
 
 .site-content {
 	padding-top: 50px;
+}
+
+// social media links-----------------------------
+.social-buttons {
+	margin-top: 2rem;
+	i {
+	margin-right: 10px;
+	}
+}
+
+.black-btn {
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-family: "Novecento Sans Wide", sans-serif;
+	font-size: 14.4px;
+	font-size: .9rem;
+	line-height: 1;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	color: #000;
+	background-color: transparent;
 }
