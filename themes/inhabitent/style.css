@@ -374,7 +374,7 @@ ul, ol {
   margin: 0 0 4.5rem 9rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -933,3 +933,25 @@ body.page-template-about .entry-content {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 3rem;
   padding-bottom: 1rem; }
+
+.page-template-front-page .site-main {
+  width: 1120px;
+  margin: 0 auto; }
+
+ul.journal-entries {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.4rem;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 0; }
+  ul.journal-entries li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 250px 2rem 2rem 4rem;
+        grid-template-rows: 250px 2rem 2rem 4rem;
+    border: 1px solid #e1e1e1; }
+    ul.journal-entries li img {
+      border-bottom: .3rem solid #e1e1e1; }
