@@ -2,6 +2,12 @@
   padding-left: 20%;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  a {
+    @include link-green;
+    font-family: "Merriweather", serif;
+    text-transform: none;
+  }
   
   .widget {
     margin: 0 0 3rem;

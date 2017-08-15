@@ -18,6 +18,11 @@
     margin-bottom: .5rem;
     line-height: 1.75rem;
   }
+  a {
+    @include link-white;
+    font-family: "Merriweather", serif;
+    text-transform: none;
+  }
   h3 {
     color: $color__orange_brand;
     text-transform: uppercase;

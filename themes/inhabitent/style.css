@@ -299,6 +299,10 @@ h2 {
   color: #2f1339;
   margin-bottom: 1.5rem; }
 
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.25; }
+
 /* Copy */
 dfn, cite, em, i {
   font-style: italic; }
@@ -414,37 +418,6 @@ label {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
 /* Fields */
 input[type="text"],
 input[type="email"],
@@ -498,15 +471,26 @@ button, input[type=button], input[type=reset], input[type=submit] {
   line-height: 1;
   font-size: .9rem; }
 
+.white-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
+  text-transform: uppercase; }
+  .white-button:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #fff; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248a83;
+  font-family: "Novecento Sans Wide", sans-serif;
   text-decoration: none; }
   a:visited {
-    color: #248a83;
     text-decoration: none; }
   a:focus {
     outline: thin dotted; }
@@ -517,7 +501,6 @@ a {
 .site-branding {
   height: 33px; }
   .site-branding a {
-    color: #248a83;
     text-decoration: none; }
 
 .main-navigation ul {
@@ -528,11 +511,13 @@ a {
   .main-navigation ul li {
     display: inline-block;
     padding-left: 1.5rem; }
-  .main-navigation ul a:hover,
-  .main-navigation ul a.focus {
-    color: #404040; }
   .main-navigation ul a {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #248A83;
+    font-size: 1rem;
+    line-height: 1.75; }
+    .main-navigation ul a:hover {
+      color: #2f1339; }
 
 /* Small menu. */
 .menu-toggle,
@@ -832,6 +817,14 @@ object {
   padding-left: 20%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
+  .widget-area a {
+    color: #248A83;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Merriweather", serif;
+    text-transform: none; }
+    .widget-area a:hover {
+      color: #2f1339; }
   .widget-area .widget {
     margin: 0 0 3rem; }
     .widget-area .widget h2 {
@@ -863,6 +856,14 @@ object {
     color: white;
     margin-bottom: .5rem;
     line-height: 1.75rem; }
+  .footer-content a {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Merriweather", serif;
+    text-transform: none; }
+    .footer-content a:hover {
+      text-decoration: underline; }
   .footer-content h3 {
     color: #d99054;
     text-transform: uppercase; }
@@ -950,8 +951,96 @@ ul.journal-entries {
   ul.journal-entries li {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 250px 2rem 2rem 4rem;
-        grid-template-rows: 250px 2rem 2rem 4rem;
+    -ms-grid-rows: 250px 10rem;
+        grid-template-rows: 250px 10rem;
     border: 1px solid #e1e1e1; }
     ul.journal-entries li img {
-      border-bottom: .3rem solid #e1e1e1; }
+      border-bottom: .3rem solid #e1e1e1;
+      height: 250px; }
+    ul.journal-entries li .front-page-journal-blurb {
+      padding: 1rem;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: auto 3fr auto;
+          grid-template-rows: auto 3fr auto; }
+    ul.journal-entries li .date-comments {
+      font-size: .75rem; }
+    ul.journal-entries li a.blurb-title {
+      color: #248A83;
+      font-size: 1rem;
+      line-height: 1.75;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      line-height: 1.25;
+      letter-spacing: 2px;
+      margin-bottom: 1rem; }
+      ul.journal-entries li a.blurb-title:hover {
+        color: #2f1339; }
+    ul.journal-entries li a.white-button {
+      width: 140px;
+      padding: .5rem 1.5rem; }
+
+.entry-footer a {
+  color: #248A83;
+  font-size: 1rem;
+  line-height: 1.75; }
+  .entry-footer a:hover {
+    color: #2f1339; }
+
+.entry-footer .social-buttons button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
+  text-transform: uppercase; }
+  .entry-footer .social-buttons button:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #fff; }
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 1rem; }
+  .comment-list h2 {
+    margin-bottom: 0; }
+
+.comment-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid lightgrey; }
+  .comment-body .comment-author-avatar {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 1.5rem;
+    width: 64px; }
+  .comment-body .comment-content {
+    padding-bottom: 2rem; }
+    .comment-body .comment-content a {
+      color: #248A83;
+      font-size: 1rem;
+      line-height: 1.75;
+      font-family: "Merriweather", sans-serif;
+      font-style: normal; }
+      .comment-body .comment-content a:hover {
+        color: #2f1339; }
+    .comment-body .comment-content p {
+      margin-bottom: .5rem; }
+
+.comment-meta .comment-author {
+  font-weight: bold; }
+
+.comment-meta .comment-metadata {
+  color: grey; }
+
+.comment-respond a {
+  color: #248A83;
+  font-size: 1rem;
+  line-height: 1.75; }
+  .comment-respond a:hover {
+    color: #2f1339; }

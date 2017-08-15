@@ -5,11 +5,10 @@
 /* Links */
 
 a {
-	color: $color__link;
+	font-family: "Novecento Sans Wide", sans-serif;
 	text-decoration: none;
 
 	&:visited {
-		color: $color__link;
 		text-decoration: none;
 	}
 	&:focus {
@@ -27,7 +26,6 @@ a {
 	height: 33px;
 
 	a {
-    color: #248a83;
     text-decoration: none;
 	}
 }
@@ -48,12 +46,9 @@ a {
 
 		}
 
-		a:hover,
-		a.focus {
-			color: $color__link-hover;
-		}
 		a {
 			text-transform: uppercase;
+			@include link-green;
 		}
 	}
 }

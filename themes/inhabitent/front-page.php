@@ -23,13 +23,15 @@ get_header(); ?>
           the_post_thumbnail( 'large' ); 
         } ?>
 
-        <div class="date-comments">
-          <?php inhabitent_posted_on(); ?> /
-          <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-        </div>
+        <div class="front-page-journal-blurb">
+          <div class="date-comments">
+            <?php inhabitent_posted_on(); ?>
+            <?php comments_number( '/ 0 Comments', '/ 1 Comment', '/ % Comments' ); ?>
+          </div>
 
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        <a class="black-btn" href="<?php the_permalink(); ?>">Read Entry</a>
+          <a class="blurb-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <a class="white-button" href="<?php the_permalink(); ?>">Read Entry</a>
+        </div>
         
       </li>
     

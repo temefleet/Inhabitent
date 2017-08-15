@@ -17,7 +17,7 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
-	<?php // You can start editing here -- including this comment! ?>
+	<?php add_filter( 'comment_form_logged_in', '__return_empty_string' ); ?>
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
