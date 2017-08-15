@@ -23,6 +23,16 @@ a {
 
 /* Menus */
 
+.site-branding {
+	height: 33px;
+
+	a {
+    color: #248a83;
+    text-decoration: none;
+	}
+}
+
+
 .main-navigation {
 
 	ul {
@@ -42,16 +52,10 @@ a {
 		a.focus {
 			color: $color__link-hover;
 		}
+		a {
+			text-transform: uppercase;
+		}
 	}
-	
-	a {
-		text-transform: uppercase;
-	}
-
-	// .current_page_item > a,
-	// .current-menu-item > a,
-	// .current_page_ancestor > a {
-	// }
 }
 
 /* Small menu. */

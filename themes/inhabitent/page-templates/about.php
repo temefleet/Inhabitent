@@ -14,7 +14,6 @@ get_header(); ?>
 				<header class="entry-header custom-hero">
 					<div class="container">
 						<?php the_title( '<h1 class="entry-title">', '</h1>'); ?>
-						<?php echo CFS()->get( 'about_header_image'); ?>
 					</div>
 				</header>
 
