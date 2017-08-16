@@ -429,13 +429,6 @@ textarea {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1;
   border-radius: 0; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
 
 input[type="text"],
 input[type="email"],
@@ -938,6 +931,14 @@ body.page-template-about .entry-content {
 
 .widget h2 {
   font-size: 1.5rem; }
+
+.error404 .content-area a {
+  color: #248A83;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-family: "Merriweather", serif; }
+  .error404 .content-area a:hover {
+    color: #2f1339; }
 
 .archive:not(.post-type-archive):not(.tax-product-type) .page-header, .search .page-header {
   border-bottom: 1px solid #e1e1e1;

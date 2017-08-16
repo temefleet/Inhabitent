@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
     <?php
-      $args = array( 'post_type' => 'product' );
+      $args = array( 'post_type' => 'product-type' );
       $product_types = get_terms( $args );
     ?>
 

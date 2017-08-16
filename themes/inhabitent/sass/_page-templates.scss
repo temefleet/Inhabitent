@@ -62,6 +62,13 @@ body.page-template-about {
   }
 }
 
+.error404 {
+  .content-area a {
+    @include link-green;
+    font-family: "Merriweather", serif;
+  }
+}
+
 
 // archive ---------------------------------
 

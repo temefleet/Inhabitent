@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Type
+ * Template Name: Shop Product Archive
  *
  * @package inhabitent_Theme
  */
@@ -27,5 +27,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+
+<!-- how to filter out archive titles -->
+
