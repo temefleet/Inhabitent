@@ -35,10 +35,6 @@ hr {
 	margin-bottom: $base__space-unit;
 }
 
-ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
-}
-
 ul {
 	list-style: none;
 }
@@ -51,6 +47,10 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: $base__space-unit;
+}
+
+ul {
+	padding-left: 0;
 }
 
 dt {

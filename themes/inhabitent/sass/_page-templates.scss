@@ -79,6 +79,30 @@ body.page-template-about {
   margin: 0 auto;
 }
 
+ul.front-page-product-types {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem;
+}
+
+.front-page-type {
+  border: 1px solid #e1e1e1;
+  border-top-width: .25rem;
+  text-align: center;
+  padding: .75rem;
+  padding-bottom: 1.5rem;
+  &:hover {
+    border-color: #d99054;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  p {
+    padding-bottom: .5rem;
+  }
+}
+
 ul.journal-entries {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

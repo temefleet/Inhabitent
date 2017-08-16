@@ -26,6 +26,18 @@
 	}
 }
 
+@mixin green-button {
+	background-color: $color__green_brand;
+	color: #fff;
+	padding: .75rem 1.5rem;
+	font-size: .9rem;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #19625d;
+	}
+}
+
 @mixin link-green {
 	color: $color__green_brand;
 	font-size: 1rem;

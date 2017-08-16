@@ -91,3 +91,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
 .white-button {
 	@include white-button;
 }
+
+.green-button {
+	@include green-button;
+}

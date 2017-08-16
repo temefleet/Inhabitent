@@ -374,9 +374,6 @@ hr {
   height: 1px;
   margin-bottom: 4.5rem; }
 
-ul, ol {
-  margin: 0 0 4.5rem 9rem; }
-
 ul {
   list-style: none; }
 
@@ -387,6 +384,9 @@ li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 4.5rem; }
+
+ul {
+  padding-left: 0; }
 
 dt {
   font-weight: bold; }
@@ -482,6 +482,15 @@ button, input[type=button], input[type=reset], input[type=submit] {
     background-color: #248A83;
     color: #fff;
     border: 1px solid #fff; }
+
+.green-button {
+  background-color: #248A83;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
+  text-transform: uppercase; }
+  .green-button:hover {
+    background-color: #19625d; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -938,6 +947,27 @@ body.page-template-about .entry-content {
 .page-template-front-page .site-main {
   width: 1120px;
   margin: 0 auto; }
+
+ul.front-page-product-types {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem; }
+
+.front-page-type {
+  border: 1px solid #e1e1e1;
+  border-top-width: .25rem;
+  text-align: center;
+  padding: .75rem;
+  padding-bottom: 1.5rem; }
+  .front-page-type:hover {
+    border-color: #d99054; }
+  .front-page-type img {
+    width: 70px;
+    height: 70px; }
+  .front-page-type p {
+    padding-bottom: .5rem; }
 
 ul.journal-entries {
   display: -ms-grid;
