@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Single Product
+ * Inhabitent Single Product Page
  *
  * @package inhabitent_Theme
  */

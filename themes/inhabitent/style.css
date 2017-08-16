@@ -788,6 +788,87 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-template-front-page .site-main {
+  width: 1120px;
+  margin: 0 auto; }
+
+.front-page-hero-banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .front-page-hero-banner img {
+    height: 275px;
+    width: 275px; }
+
+ul.front-page-product-types {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem; }
+
+.front-page-type {
+  border: 1px solid #e1e1e1;
+  border-top-width: .25rem;
+  text-align: center;
+  padding: .75rem;
+  padding-bottom: 1.5rem; }
+  .front-page-type:hover {
+    border-color: #d99054; }
+  .front-page-type img {
+    width: 70px;
+    height: 70px; }
+  .front-page-type p {
+    padding-bottom: .5rem; }
+
+ul.journal-entries {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.4rem;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 0; }
+  ul.journal-entries li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 250px 10rem;
+        grid-template-rows: 250px 10rem;
+    border: 1px solid #e1e1e1; }
+    ul.journal-entries li img {
+      border-bottom: .3rem solid #e1e1e1;
+      height: 250px; }
+    ul.journal-entries li .front-page-journal-blurb {
+      padding: 1rem;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: auto 3fr auto;
+          grid-template-rows: auto 3fr auto; }
+    ul.journal-entries li .date-comments {
+      font-size: .75rem; }
+    ul.journal-entries li a.blurb-title {
+      color: #248A83;
+      font-size: 1rem;
+      line-height: 1.75;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      line-height: 1.25;
+      letter-spacing: 2px;
+      margin-bottom: 1rem; }
+      ul.journal-entries li a.blurb-title:hover {
+        color: #2f1339; }
+    ul.journal-entries li a.white-button {
+      width: 140px;
+      padding: .5rem 1.5rem; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front Page
+ * Inhabitent Front Page
  *
  * @package inhabitent_Theme
  */
@@ -9,13 +9,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+      <section class="front-page-hero-banner">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Home Hero Banner">
+      </section>
 
     <?php
       $args = array( 'post_type' => 'product-type' );
       $product_types = get_terms( $args );
     ?>
-
-    
 
     <ul class="front-page-product-types">
     <?php foreach ( $product_types as $type ) : setup_postdata( $type ); ?>
