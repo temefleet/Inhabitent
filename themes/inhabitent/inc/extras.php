@@ -48,10 +48,10 @@ add_filter('login_headertitle', 'inhabitent_login_title');
 
 
 // link login logo to homepage
-function my_login_logo_url() {
+function inhabitent_login_logo_url() {
     return home_url();
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter( 'login_headerurl', 'inhabitent_login_logo_url' );
 
 function inhabitent_remove_submenus() {
 	remove_submenu_page( 'themes.php', 'theme-editor.php' );
@@ -82,8 +82,8 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 
 // Replaces the excerpt "Read More" text by a link
-function new_excerpt_more($more) {
+function inhabitent_replace_read_more($more) {
 	global $post;
 	return '[...]<p><a class="white-button" href="'. get_permalink($post->ID) . '">Read More →</a></p>';
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+add_filter('excerpt_more', 'inhabitent_replace_read_more');
