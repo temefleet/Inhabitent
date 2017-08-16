@@ -27,7 +27,7 @@
 							<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
 							<img src="<?php echo get_site_url() ?>/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo">
 						</a>
-						<!-- <p class="site-description"><?php //bloginfo( 'description' ); ?></p> -->
+					
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">

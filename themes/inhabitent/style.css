@@ -838,6 +838,9 @@ object {
     .widget-area .widget p {
       margin-bottom: 0.5rem; }
 
+.day-of-week {
+  font-weight: bold; }
+
 #colophon.site-footer {
   background: url("../../images/dark-wood@2x.png");
   background-size: 512px 512px;
