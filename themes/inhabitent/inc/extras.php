@@ -87,3 +87,23 @@ function inhabitent_replace_read_more($more) {
 	return '[...]<p><a class="white-button" href="'. get_permalink($post->ID) . '">Read More →</a></p>';
 }
 add_filter('excerpt_more', 'inhabitent_replace_read_more');
+
+// post limit per page
+function inhabitent_limit_archive_posts($query){
+	if ($query->is_archive) {
+		$query->set('posts_per_page', 20);
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');
+
+function my_theme_archive_title( $title ) {
+	if ( is_post_type_archive('product') ) {
+			$title = 'Shop Stuff';
+	}elseif(is_post_type_archive('adventure')){
+		$title = 'Adventures';
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );

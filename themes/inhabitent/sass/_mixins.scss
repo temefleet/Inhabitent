@@ -48,6 +48,18 @@
 	}
 }
 
+@mixin link-green-accent {
+	color: $color__green_brand;
+	font-size: 1rem;
+	line-height: 1.75;
+	font-family: $font__accent;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $color__purple_brand;
+	}
+}
+
 @mixin link-white {
 	color: #fff;
 	font-size: 1rem;
@@ -56,4 +68,11 @@
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+@mixin p-text {
+	font-family: $font__main;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: none;
 }

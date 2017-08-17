@@ -788,7 +788,7 @@ object {
 .gallery-caption {
   display: block; }
 
-.page-template-front-page .site-main {
+.front-page-content {
   width: 1120px;
   margin: 0 auto; }
 
@@ -1159,3 +1159,120 @@ ul.journal-entries {
   line-height: 1.75; }
   .comment-respond a:hover {
     color: #2f1339; }
+
+.post-type-archive .site-content {
+  max-width: 1120px;
+  margin: 0 auto; }
+  .post-type-archive .site-content h1 {
+    text-align: center; }
+
+.shop-page-product-types {
+  list-style: none;
+  text-align: center; }
+  .shop-page-product-types li {
+    display: inline;
+    padding: 3rem 1.3rem; }
+  .shop-page-product-types a {
+    color: #248A83;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Novecento Sans Wide", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+    .shop-page-product-types a:hover {
+      color: #2f1339; }
+
+.shop-page-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1.5rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px dashed #e1e1e1;
+  margin-bottom: 6rem; }
+  .shop-page-products div.type-product {
+    border: 1px solid #e1e1e1;
+    margin: 0; }
+  .shop-page-products img {
+    object-fit: cover;
+    height: 250px;
+    border-bottom: 5px solid #e1e1e1; }
+  .shop-page-products .product-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+    padding: .5rem 1rem 1rem; }
+  .shop-page-products .product-name {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-right: .3rem;
+    letter-spacing: 0;
+    line-height: 1.25; }
+  .shop-page-products .leader-dots {
+    border-bottom: 2px dotted black;
+    margin-bottom: 3px; }
+  .shop-page-products .price {
+    overflow: hidden;
+    margin: 0;
+    line-height: 1.25;
+    padding-left: .3rem; }
+
+.tax-product-type .site-content {
+  width: 1120px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center; }
+
+.type-page-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px dashed #e1e1e1;
+  margin-bottom: 6rem; }
+  .type-page-products div.type-product {
+    border: 1px solid #e1e1e1;
+    margin: 0; }
+  .type-page-products img {
+    object-fit: cover;
+    height: 250px;
+    border-bottom: 5px solid #e1e1e1; }
+  .type-page-products .product-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+    padding: .5rem 1rem 1rem; }
+  .type-page-products .product-name {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-right: .3rem;
+    letter-spacing: 0;
+    line-height: 1.25; }
+  .type-page-products .leader-dots {
+    border-bottom: 2px dotted black;
+    margin-bottom: 3px; }
+  .type-page-products .price {
+    overflow: hidden;
+    margin: 0;
+    line-height: 1.25;
+    padding-left: .3rem; }
