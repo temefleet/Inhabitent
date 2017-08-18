@@ -90,15 +90,18 @@ function inhabitent_replace_read_more($more) {
 add_filter('excerpt_more', 'inhabitent_replace_read_more');
 
 
-// post limit per page
-function inhabitent_limit_archive_posts($query){
+// post limit per page, order alphabetically by title
+function inhabitent_archive_posts($query){
 	if ($query->is_archive) {
 		$query->set('posts_per_page', 16);
+		$query->set( 'order', 'ASC' );
+		$query->set( 'orderby', 'title' );
     }
     return $query;
 }
-add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');
+add_filter('pre_get_posts', 'inhabitent_archive_posts');
 
+// change titles
 function product_type_title( $title ) {
 	if ( is_post_type_archive('product') ) {
 		$title = 'Shop Stuff';
