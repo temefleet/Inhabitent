@@ -18,7 +18,7 @@
 	<div class="product-info">
 		<?php the_title( '<h2 class="product-name">', '</h2>' ); ?>
 		<div class="leader-dots"></div>
-		<p class="price"><?php echo CFS()->get( 'product_price' ); ?></p>
+		<p class="price">$<?php echo CFS()->get( 'product_price' ); ?></p>
 	</div>
 
 </div><!-- #post-## -->

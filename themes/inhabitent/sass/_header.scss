@@ -28,3 +28,38 @@
     margin: 0 auto;
   }
 }
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+
+  i {
+    line-height: 1.75;
+    padding-left: 1rem;
+    color: $color__green_brand;
+  }
+
+  fieldset {
+    padding: 0;
+    display: inline;
+
+    label {
+      font-size: 1rem;
+    }
+    
+    .search-field {
+      border: 0;
+      background: transparent;
+      font-family: "Novecento Sans Wide", sans-serif;
+      padding: 0 .3rem;
+      text-transform: uppercase;
+      outline: none;
+      width: 0;
+      transition: width 0.5s ease-in-out;
+    }
+
+    .search-field-show {
+      width: 177px;
+    }
+  }
+}

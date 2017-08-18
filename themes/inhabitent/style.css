@@ -627,6 +627,10 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.content-area h1:first-child {
+  margin-top: 0;
+  padding-top: 4rem; }
+
 .post .entry-header {
   line-height: 0;
   position: relative; }
@@ -866,6 +870,34 @@ ul.journal-entries {
       width: 140px;
       padding: .5rem 1.5rem; }
 
+main.no-banner {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 6rem; }
+
+article.product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  grid-column-gap: 3rem; }
+  article.product img {
+    -ms-grid-row-span: 4;
+        grid-row-end: span 4;
+    object-fit: contain; }
+  article.product h1 {
+    margin-top: 0;
+    color: #d99054; }
+  article.product .price {
+    font-family: "Novecento Sans Wide", sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    text-transform: uppercase; }
+  article.product .social-buttons {
+    margin-top: 1rem; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
@@ -893,9 +925,35 @@ ul.journal-entries {
 .entry-header h1 {
   margin: 0 auto; }
 
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .main-navigation i {
+    line-height: 1.75;
+    padding-left: 1rem;
+    color: #248A83; }
+  .main-navigation fieldset {
+    padding: 0;
+    display: inline; }
+    .main-navigation fieldset label {
+      font-size: 1rem; }
+    .main-navigation fieldset .search-field {
+      border: 0;
+      background: transparent;
+      font-family: "Novecento Sans Wide", sans-serif;
+      padding: 0 .3rem;
+      text-transform: uppercase;
+      outline: none;
+      width: 0;
+      transition: width 0.5s ease-in-out; }
+    .main-navigation fieldset .search-field-show {
+      width: 177px; }
+
 .widget-area {
   padding-left: 20%;
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 3rem; }
   .widget-area a {
     color: #248A83;
