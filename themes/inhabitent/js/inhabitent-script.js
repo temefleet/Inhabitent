@@ -1,6 +1,10 @@
 // function to show/hide search in menu bar
 (function($) {
 
+  if ($('#hero-banner').visible(false)) {
+    $('#masthead').removeClass('dark-header');
+} 
+
   // show when click search icon
   $('.search-toggle').on('click', function () {
     if (!$('.search-field').hasClass('search-field-show')) {

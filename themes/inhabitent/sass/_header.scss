@@ -63,3 +63,26 @@
     }
   }
 }
+
+// -------------------------------------------------------------
+// site header on pages with banner
+
+.dark-header {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: none;
+  padding: .5rem 0;
+  position: absolute;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3;
+  margin: 0 auto;
+  .main-navigation {
+    i, a {
+      color: white;
+    }
+    i:hover, a:hover, input, input::placeholder {
+      color: $color__yellow_brand;
+    }
+  }
+}

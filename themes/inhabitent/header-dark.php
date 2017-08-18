@@ -20,12 +20,12 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header dark-header" role="banner">
 				<div class="header-content">
 					<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
-							<img id ="header-logo" src="<?php echo get_site_url() ?>/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo">
+							<img id ="header-logo" src="<?php echo get_site_url() ?>/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent Logo">
 						</a>
 					
 					</div><!-- .site-branding -->

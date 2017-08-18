@@ -5,12 +5,12 @@
  * @package inhabitent_Theme
  */
 
-get_header(); ?>
+get_header('dark'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <section class="front-page-hero-banner">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Home Hero Banner">
+        <img id="hero-banner" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Home Hero Banner">
       </section>
 
       <section class="front-page-content">  

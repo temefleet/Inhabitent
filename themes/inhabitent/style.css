@@ -500,11 +500,6 @@ a {
     outline: 0; }
 
 /* Menus */
-.site-branding {
-  height: 33px; }
-  .site-branding a {
-    text-decoration: none; }
-
 .main-navigation ul {
   font-family: "Novecento Sans Wide", sans-serif;
   list-style: none;
@@ -967,6 +962,25 @@ ul.journal-entries {
       transition: width 0.5s ease-in-out; }
     .main-navigation fieldset .search-field-show {
       width: 177px; }
+
+.dark-header {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: none;
+  padding: .5rem 0;
+  position: absolute;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3;
+  margin: 0 auto; }
+  .dark-header .main-navigation i, .dark-header .main-navigation a {
+    color: white; }
+  .dark-header .main-navigation i:hover, .dark-header .main-navigation a:hover, .dark-header .main-navigation input, .dark-header .main-navigation input::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .dark-header .main-navigation i:hover, .dark-header .main-navigation a:hover, .dark-header .main-navigation input, .dark-header .main-navigation input:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .dark-header .main-navigation i:hover, .dark-header .main-navigation a:hover, .dark-header .main-navigation input, .dark-header .main-navigation input::placeholder {
+    color: #f0e4d1; }
 
 .widget-area {
   padding-left: 20%;
