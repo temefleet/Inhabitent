@@ -81,6 +81,7 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 
+
 // Replaces the excerpt "Read More" text by a link
 function inhabitent_replace_read_more($more) {
 	global $post;
@@ -88,22 +89,22 @@ function inhabitent_replace_read_more($more) {
 }
 add_filter('excerpt_more', 'inhabitent_replace_read_more');
 
+
 // post limit per page
 function inhabitent_limit_archive_posts($query){
 	if ($query->is_archive) {
-		$query->set('posts_per_page', 20);
+		$query->set('posts_per_page', 16);
     }
     return $query;
 }
 add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');
 
-function my_theme_archive_title( $title ) {
+function product_type_title( $title ) {
 	if ( is_post_type_archive('product') ) {
-			$title = 'Shop Stuff';
-	}elseif(is_post_type_archive('adventure')){
+		$title = 'Shop Stuff';
+	} elseif ( is_post_type_archive ( 'adventure' ) ) {
 		$title = 'Adventures';
 	}
 	return $title;
 }
-
-add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+add_filter( 'get_the_archive_title', 'product_type_title' );

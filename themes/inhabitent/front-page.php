@@ -14,21 +14,26 @@ get_header(); ?>
       </section>
 
       <section class="front-page-content">  
-        
+
+      <h2>Shop Stuff</h2>
+      
       <?php
-        $args = array( 'post_type' => 'product-type' );
+        $args = array( 'taxonomy' => 'product-type' );
         $product_types = get_terms( $args );
       ?>
 
       <ul class="front-page-product-types">
       <?php foreach ( $product_types as $type ) : setup_postdata( $type ); ?>
         <li class="front-page-type">
+          
           <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $type->slug ?>.svg">
           <p><?php echo $type->description ?></p>
+          
           <a class="green-button"
             href="<?php echo get_site_url(); ?>/product-type/<?php echo $type->slug ?>">
             <?php echo $type->name ?> Stuff
           </a>
+          
         </li>
       <?php endforeach; wp_reset_postdata(); ?>
       </ul>

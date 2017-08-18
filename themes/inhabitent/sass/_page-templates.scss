@@ -4,10 +4,6 @@
 
 /* Front page */
 
-body.page-template.default {
-  
-}
-
 
 // Find us -------------------------------------------
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) {
@@ -20,7 +16,11 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     .content-area {
       border-right: 1px solid #e1e1e1;
       padding-right: 7%;
-      padding-top: 3rem;
+    }
+    .hentry {
+      margin: 0;
+    }
+    .journal-article-section:not(:last-child) {
       padding-bottom: 3rem;
     }
   }
@@ -247,7 +247,6 @@ ul.journal-entries {
   padding-top: 3rem;
   margin-top: 3rem;
   border-top: 1px dashed #e1e1e1;
-  margin-bottom: 6rem;
   div.type-product { 
     border: 1px solid #e1e1e1;
     margin: 0;
@@ -299,7 +298,6 @@ ul.journal-entries {
   padding-top: 3rem;
   margin-top: 3rem;
   border-top: 1px dashed #e1e1e1;
-  margin-bottom: 6rem;
 
   div.type-product { 
     border: 1px solid #e1e1e1;

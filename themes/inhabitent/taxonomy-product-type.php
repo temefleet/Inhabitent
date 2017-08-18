@@ -8,12 +8,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main no-banner" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php single_tag_title(); ?></h1>
+				<h1 class="page-title"><?php single_term_title(); ?></h1>
 				<p><?php the_archive_description(); ?></p>
 			</header><!-- .page-header -->
 

@@ -1,10 +1,7 @@
-main.no-banner {
+
+.single-product-page {
   width: $base__width;
   margin: 0 auto;
-  padding-top: 6rem;
-}
-
-article.product {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);

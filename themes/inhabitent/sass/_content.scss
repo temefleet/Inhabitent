@@ -3,10 +3,12 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-.content-area h1:first-child {
-	margin-top: 0;
-	padding-top: 4rem;
+main.no-banner {
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
+
 .post {
 	.entry-header {
 	line-height: 0;

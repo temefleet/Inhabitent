@@ -474,7 +474,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
   .white-button:hover {
     background-color: #248A83;
     color: #fff;
-    border: 1px solid #fff; }
+    border: 1px solid #248A83; }
 
 .green-button {
   background-color: #248A83;
@@ -627,9 +627,10 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-.content-area h1:first-child {
-  margin-top: 0;
-  padding-top: 4rem; }
+main.no-banner {
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
 
 .post .entry-header {
   line-height: 0;
@@ -792,6 +793,10 @@ object {
 .front-page-content {
   width: 1120px;
   margin: 0 auto; }
+  .front-page-content h2 {
+    text-align: center;
+    padding: 2rem;
+    font-weight: normal; }
 
 .front-page-hero-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -870,12 +875,9 @@ ul.journal-entries {
       width: 140px;
       padding: .5rem 1.5rem; }
 
-main.no-banner {
+.single-product-page {
   width: 1120px;
   margin: 0 auto;
-  padding-top: 6rem; }
-
-article.product {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -883,20 +885,35 @@ article.product {
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
   grid-column-gap: 3rem; }
-  article.product img {
+  .single-product-page img {
     -ms-grid-row-span: 4;
         grid-row-end: span 4;
     object-fit: contain; }
-  article.product h1 {
+  .single-product-page h1 {
     margin-top: 0;
     color: #d99054; }
-  article.product .price {
+  .single-product-page .price {
     font-family: "Novecento Sans Wide", sans-serif;
     font-size: 1.8rem;
     margin: 0;
     text-transform: uppercase; }
-  article.product .social-buttons {
+  .single-product-page .social-buttons {
     margin-top: 1rem; }
+
+.search-results .search-entry-header .entry-title a {
+  color: #248A83; }
+
+.search-results .search-entry-header .entry-title a:hover {
+  color: #2f1339; }
+
+.search-results .search-entry-header .search-entry-meta {
+  font-family: "Novecento Sans Wide", sans-serif;
+  text-transform: uppercase; }
+
+.search-results article {
+  padding-bottom: 2rem; }
+  .search-results article p {
+    padding-bottom: 1rem; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1039,8 +1056,10 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   width: 1120px; }
   body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content .content-area {
     border-right: 1px solid #e1e1e1;
-    padding-right: 7%;
-    padding-top: 3rem;
+    padding-right: 7%; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content .hentry {
+    margin: 0; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content .journal-article-section:not(:last-child) {
     padding-bottom: 3rem; }
 
 body.page-template-about .entry-header {
@@ -1168,7 +1187,7 @@ ul.journal-entries {
   .entry-footer .social-buttons button:hover {
     background-color: #248A83;
     color: #fff;
-    border: 1px solid #fff; }
+    border: 1px solid #248A83; }
 
 .comment-list {
   margin-left: 0;
@@ -1248,8 +1267,7 @@ ul.journal-entries {
   grid-row-gap: 1.5rem;
   padding-top: 3rem;
   margin-top: 3rem;
-  border-top: 1px dashed #e1e1e1;
-  margin-bottom: 6rem; }
+  border-top: 1px dashed #e1e1e1; }
   .shop-page-products div.type-product {
     border: 1px solid #e1e1e1;
     margin: 0; }
@@ -1297,8 +1315,7 @@ ul.journal-entries {
   grid-column-gap: 2rem;
   padding-top: 3rem;
   margin-top: 3rem;
-  border-top: 1px dashed #e1e1e1;
-  margin-bottom: 6rem; }
+  border-top: 1px dashed #e1e1e1; }
   .type-page-products div.type-product {
     border: 1px solid #e1e1e1;
     margin: 0; }

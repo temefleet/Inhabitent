@@ -1,0 +1,19 @@
+.search-results .search-entry-header {
+  .entry-title a {
+    color: $color__green_brand;
+  }
+  .entry-title a:hover {
+    color: $color__purple_brand;
+  }
+  .search-entry-meta {
+    font-family: $font__accent;
+    text-transform: uppercase;
+  }
+}
+
+.search-results article {
+  padding-bottom: 2rem;
+  p {
+    padding-bottom: 1rem;
+  }
+}

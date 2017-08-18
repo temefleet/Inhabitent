@@ -3,6 +3,11 @@
 .front-page-content {
   width: $base__width;
   margin: 0 auto;
+  h2 {
+    text-align: center;
+    padding: 2rem;
+    font-weight: normal;
+  }
 }
 
 .front-page-hero-banner {
