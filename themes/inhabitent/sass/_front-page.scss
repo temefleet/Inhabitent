@@ -90,3 +90,21 @@ ul.journal-entries {
     }
   }
 }
+
+.front-page-adventures {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .front-page-adventure {
+    object-fit: cover;
+  }
+  
+  .front-page-adventure:first-child {
+    grid-row-start: span 2;
+  }
+
+  .front-page-adventure:nth-child(2) {
+    grid-column-start: span 2;
+  }
+}

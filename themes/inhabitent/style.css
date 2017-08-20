@@ -870,6 +870,22 @@ ul.journal-entries {
       width: 140px;
       padding: .5rem 1.5rem; }
 
+.front-page-adventures {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr; }
+  .front-page-adventures .front-page-adventure {
+    object-fit: cover; }
+  .front-page-adventures .front-page-adventure:first-child {
+    -ms-grid-row: span 2;
+        grid-row-start: span 2; }
+  .front-page-adventures .front-page-adventure:nth-child(2) {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2; }
+
 .single-product-page {
   width: 1120px;
   margin: 0 auto;

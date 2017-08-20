@@ -9,12 +9,13 @@ get_header('dark'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-      <section class="front-page-hero-banner">
-        <img id="hero-banner" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Home Hero Banner">
+      <section id="hero-banner" class="front-page-hero-banner">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Home Hero Banner">
       </section>
 
       <section class="front-page-content">  
 
+      <!-- shop stuff ******************************************** -->
       <h2>Shop Stuff</h2>
       
       <?php
@@ -38,7 +39,7 @@ get_header('dark'); ?>
       <?php endforeach; wp_reset_postdata(); ?>
       </ul>
 
-
+      <!-- journal entries          ***************************** -->
       <?php
         $args = array( 'posts_per_page' => 3 );
         $journal_posts = get_posts( $args );
@@ -68,6 +69,37 @@ get_header('dark'); ?>
       
       <?php endforeach; wp_reset_postdata(); ?>
       </ul>
+
+      <!-- adventures ****************************************************** -->
+      <h2>Latest Adventures</h2>
+      
+      <?php
+        $args = array( 'post_type' => 'adventure',
+                       'posts_per_page' => 4 );
+        $adventures = new WP_Query( $args );
+      ?>
+
+      <ul class="front-page-adventures">
+
+        <?php if ( $adventures->have_posts() ) : ?>
+          <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
+            <li class="front-page-adventure">
+          
+              <?php if ( has_post_thumbnail() ) {
+                the_post_thumbnail( 'full' ); 
+              } ?>
+              
+              <a class="front-page-adventure-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <a class="white-button" href="<?php the_permalink(); ?>">Read Entry</a>
+                
+            </li>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+          <h2>Nothing found!</h2>
+        <?php endif; ?>
+      </ul>
+
       </section><!-- .front-page-content -->
 
 		</main><!-- #main -->
