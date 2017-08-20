@@ -26,6 +26,22 @@
 	}
 }
 
+@mixin transparent-button {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: .75rem 1.5rem;
+	font-size: .9rem;
+	text-transform: uppercase;
+	font-family: "Novecento Sans Wide", sans-serif;
+
+	&:hover {
+		background-color: $color__green_brand;
+		color: #fff;
+		border: 1px solid $color__green_brand;
+	}
+}
+
 @mixin green-button {
 	background-color: $color__green_brand;
 	color: #fff;

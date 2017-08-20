@@ -83,28 +83,78 @@ ul.journal-entries {
       letter-spacing: 2px;
       margin-bottom: 1rem;
     }
-
-    a.white-button {
-      width: 140px;
-      padding: .5rem 1.5rem;
-    }
   }
 }
 
 .front-page-adventures {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 270px 270px;
+  grid-column-gap: 1rem;
+  padding-bottom: 1rem;
 
-  .front-page-adventure {
+  li {
+    position: relative;
+    background: black;
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
     object-fit: cover;
+    opacity: 0.6;
+  }
+
+  .transparent-button {
+    @include transparent-button;
+    text-transform: uppercase;
+  }
+
+  div.adventure-info {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding-right: 1.5rem;
+    h3 a {
+      color: #fff;
+      font-family: "Merriweather", serif;
+      font-weight: normal;
+      text-transform: none;
+    }
+    h3 a:hover {
+      color: #f0e4d1;
+    }
   }
   
   .front-page-adventure:first-child {
     grid-row-start: span 2;
+    img {
+      height: 540px;
+    }
+    h3 a {
+      font-size: 3rem;
+    } 
   }
 
   .front-page-adventure:nth-child(2) {
     grid-column-start: span 2;
+    border-bottom: 0.5rem solid #fff;
+    h3 a {
+      font-size: 2.4rem;
+    }
+  }
+
+  .front-page-adventure:nth-child(3), .front-page-adventure:nth-child(4) {
+    border-top: 0.5rem solid #fff;
+    h3 a {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.adventure-wrapper {
+  padding-bottom: 4rem;
+  .green-button {
+  font-size: 1.2rem;
   }
 }

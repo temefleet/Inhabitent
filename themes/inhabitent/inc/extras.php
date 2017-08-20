@@ -92,11 +92,16 @@ add_filter('excerpt_more', 'inhabitent_replace_read_more');
 
 // post limit per page, order alphabetically by title
 function inhabitent_archive_posts($query){
-	if ($query->is_archive) {
+	if ('product' == $query->get('post_type')) {
 		$query->set('posts_per_page', 16);
 		$query->set( 'order', 'ASC' );
 		$query->set( 'orderby', 'title' );
-    }
+		}
+	if ('adventure' == $query->get('post_type')) {
+		$query->set('posts_per_page', 4);
+		$query->set( 'order', 'ASC' );
+		$query->set( 'orderby', 'publish_date' );
+		}
     return $query;
 }
 add_filter('pre_get_posts', 'inhabitent_archive_posts');

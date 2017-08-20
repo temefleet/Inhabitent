@@ -74,23 +74,27 @@ get_header('dark'); ?>
       <h2>Latest Adventures</h2>
       
       <?php
-        $args = array( 'post_type' => 'adventure',
-                       'posts_per_page' => 4 );
+        $args = array( 'post_type' => 'adventure' );
         $adventures = new WP_Query( $args );
       ?>
 
+      <section class="adventure-wrapper">
       <ul class="front-page-adventures">
 
         <?php if ( $adventures->have_posts() ) : ?>
-          <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
+            <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
             <li class="front-page-adventure">
-          
+              
               <?php if ( has_post_thumbnail() ) {
                 the_post_thumbnail( 'full' ); 
               } ?>
               
-              <a class="front-page-adventure-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-              <a class="white-button" href="<?php the_permalink(); ?>">Read Entry</a>
+              <div class="adventure-info">
+                <h3 class="front-page-adventure-title">
+                  <a class="front-page-adventure-title-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h3>
+                <a class="transparent-button" href="<?php the_permalink(); ?>">Read More</a>
+              </div>
                 
             </li>
           <?php endwhile; ?>
@@ -99,6 +103,8 @@ get_header('dark'); ?>
           <h2>Nothing found!</h2>
         <?php endif; ?>
       </ul>
+      <a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="green-button">More Adventures</a>
+      </section>
 
       </section><!-- .front-page-content -->
 
