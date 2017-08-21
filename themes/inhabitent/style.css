@@ -485,6 +485,20 @@ button, input[type=button], input[type=reset], input[type=submit] {
   .green-button:hover {
     background-color: #19625d; }
 
+.transparent-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Wide", sans-serif;
+  text-transform: uppercase; }
+  .transparent-button:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #248A83; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -884,31 +898,6 @@ ul.journal-entries {
     height: 100%;
     object-fit: cover;
     opacity: 0.6; }
-  .front-page-adventures .transparent-button {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: .75rem 1.5rem;
-    font-size: .9rem;
-    text-transform: uppercase;
-    font-family: "Novecento Sans Wide", sans-serif;
-    text-transform: uppercase; }
-    .front-page-adventures .transparent-button:hover {
-      background-color: #248A83;
-      color: #fff;
-      border: 1px solid #248A83; }
-  .front-page-adventures div.adventure-info {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    padding-right: 1.5rem; }
-    .front-page-adventures div.adventure-info h3 a {
-      color: #fff;
-      font-family: "Merriweather", serif;
-      font-weight: normal;
-      text-transform: none; }
-    .front-page-adventures div.adventure-info h3 a:hover {
-      color: #f0e4d1; }
   .front-page-adventures .front-page-adventure:first-child {
     -ms-grid-row: span 2;
         grid-row-start: span 2; }
@@ -926,6 +915,19 @@ ul.journal-entries {
     border-top: 0.5rem solid #fff; }
     .front-page-adventures .front-page-adventure:nth-child(3) h3 a, .front-page-adventures .front-page-adventure:nth-child(4) h3 a {
       font-size: 1.6rem; }
+
+div.adventure-info {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding-right: 1.5rem; }
+  div.adventure-info h3 a {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    text-transform: none; }
+  div.adventure-info h3 a:hover {
+    color: #f0e4d1; }
 
 .adventure-wrapper {
   padding-bottom: 4rem; }
@@ -971,6 +973,46 @@ ul.journal-entries {
   padding-bottom: 2rem; }
   .search-results article p {
     padding-bottom: 1rem; }
+
+.main-adventure-content {
+  width: 800px;
+  margin: 0 auto; }
+  .main-adventure-content h2 {
+    font-size: 2.4rem; }
+  .main-adventure-content .adventure-author {
+    font-family: "Novecento Sans Wide", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 0; }
+
+.adventure-entry-footer {
+  width: 800px;
+  margin: 0 auto; }
+
+.adventures-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 1.5rem; }
+
+.adventure-archive-post {
+  height: 550px;
+  background: black;
+  position: relative; }
+  .adventure-archive-post img {
+    opacity: 0.6;
+    object-fit: cover;
+    height: 100%; }
+  .adventure-archive-post h3 {
+    font-size: 3rem; }
+
+.adventures-page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1036,7 +1078,8 @@ ul.journal-entries {
   z-index: 3;
   margin: 0 auto; }
   .dark-header .main-navigation i, .dark-header .main-navigation a {
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 2px #323232; }
   .dark-header .main-navigation i:hover, .dark-header .main-navigation a:hover, .dark-header .main-navigation input, .dark-header .main-navigation input::-webkit-input-placeholder {
     color: #f0e4d1; }
   .dark-header .main-navigation i:hover, .dark-header .main-navigation a:hover, .dark-header .main-navigation input, .dark-header .main-navigation input:-ms-input-placeholder {
@@ -1100,7 +1143,8 @@ ul.journal-entries {
       text-decoration: underline; }
   .footer-content h3 {
     color: #d99054;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.2rem; }
   .footer-content i {
     font-size: 1.25rem; }
   .footer-content .text-logo {

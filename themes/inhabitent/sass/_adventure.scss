@@ -1,0 +1,49 @@
+// single adventure
+
+.main-adventure-content {
+  width: 800px;
+  margin: 0 auto;
+  h2 {
+    font-size: 2.4rem;
+  }
+  .adventure-author {
+    font-family: $font__accent;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}
+
+.adventure-entry-footer {
+  width: 800px;
+  margin: 0 auto;
+}
+
+// adventure archive
+
+.adventures-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;  
+  grid-gap: 1.5rem;
+}
+
+.adventure-archive-post {
+  height: 550px;
+  background: black;
+  position: relative;
+  img {
+    opacity: 0.6;
+    object-fit: cover;
+    height: 100%;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.adventures-page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}

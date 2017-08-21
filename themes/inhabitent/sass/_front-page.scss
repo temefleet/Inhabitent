@@ -104,27 +104,6 @@ ul.journal-entries {
     object-fit: cover;
     opacity: 0.6;
   }
-
-  .transparent-button {
-    @include transparent-button;
-    text-transform: uppercase;
-  }
-
-  div.adventure-info {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    padding-right: 1.5rem;
-    h3 a {
-      color: #fff;
-      font-family: "Merriweather", serif;
-      font-weight: normal;
-      text-transform: none;
-    }
-    h3 a:hover {
-      color: #f0e4d1;
-    }
-  }
   
   .front-page-adventure:first-child {
     grid-row-start: span 2;
@@ -149,6 +128,22 @@ ul.journal-entries {
     h3 a {
       font-size: 1.6rem;
     }
+  }
+}
+
+div.adventure-info {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding-right: 1.5rem;
+  h3 a {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    text-transform: none;
+  }
+  h3 a:hover {
+    color: #f0e4d1;
   }
 }
 

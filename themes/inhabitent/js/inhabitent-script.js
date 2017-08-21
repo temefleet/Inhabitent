@@ -3,7 +3,9 @@
 
 // trigger class when scroll down page
 
-if ( $('body').is('.page-template-about') || $('body').is('.home') ) {
+if ( $('body').is('.page-template-about') 
+  || $('body').is('.home') 
+  || $('body').is('.single-adventure') ) {
 
   var bannerHeight = $('#hero-banner').height();
   /*eslint-disable */

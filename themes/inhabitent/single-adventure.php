@@ -5,7 +5,7 @@
  * @package inhabitent_Theme
  */
 
-get_header(); ?>
+ get_header('dark'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
