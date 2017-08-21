@@ -16,6 +16,12 @@ and getting used to the WordPress loop.
 * Gulp
 * JS/JQuery
 
+#### TODO
+
+* Fix Search Bar which jumps to the to the top when toggled.
+* Clean up CSS. A lot.
+* Clean up PHP and create more consistency across files.
+
 ### Inhabitent Front Page Image
 
 ![](https://user-images.githubusercontent.com/8882336/29503346-cc6bfaf4-85eb-11e7-9084-c1a491470d41.jpeg)
