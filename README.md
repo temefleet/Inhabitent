@@ -18,4 +18,4 @@ and getting used to the WordPress loop.
 
 ### Inhabitent Front Page Image
 
-[Inhabitent Front Page](https://user-images.githubusercontent.com/8882336/29503346-cc6bfaf4-85eb-11e7-9084-c1a491470d41.jpeg)
+![](https://user-images.githubusercontent.com/8882336/29503346-cc6bfaf4-85eb-11e7-9084-c1a491470d41.jpeg)
