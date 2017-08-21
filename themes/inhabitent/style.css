@@ -7,7 +7,7 @@ Description: A theme for hipsters and wannabes. Actually going camping is option
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Text Domain: inhabitent
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -40,8 +40,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Front Page
+# Single Product
+# Search Page
+# Adventure
+# Comments
+# Header
+# Sidebar
+# Footer
 # Page Templates
-	## Front page
+	## Find Us
+	## About
+	## 404
+	## Archive
+	## Single
+	## Shop Page
+	## Type Page
+	
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
@@ -799,6 +814,9 @@ object {
 .gallery-caption {
   display: block; }
 
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
 .front-page-content {
   width: 1120px;
   margin: 0 auto; }
@@ -934,6 +952,73 @@ div.adventure-info {
   .adventure-wrapper .green-button {
     font-size: 1.2rem; }
 
+.page-template-front-page .site-main {
+  width: 1120px;
+  margin: 0 auto; }
+
+ul.front-page-product-types {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem; }
+
+.front-page-type {
+  border: 1px solid #e1e1e1;
+  border-top-width: .25rem;
+  text-align: center;
+  padding: .75rem;
+  padding-bottom: 1.5rem; }
+  .front-page-type:hover {
+    border-color: #d99054; }
+  .front-page-type img {
+    width: 70px;
+    height: 70px; }
+  .front-page-type p {
+    padding-bottom: .5rem; }
+
+ul.journal-entries {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.4rem;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 0; }
+  ul.journal-entries li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 250px 10rem;
+        grid-template-rows: 250px 10rem;
+    border: 1px solid #e1e1e1; }
+    ul.journal-entries li img {
+      border-bottom: .3rem solid #e1e1e1;
+      height: 250px; }
+    ul.journal-entries li .front-page-journal-blurb {
+      padding: 1rem;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: auto 3fr auto;
+          grid-template-rows: auto 3fr auto; }
+    ul.journal-entries li .date-comments {
+      font-size: .75rem; }
+    ul.journal-entries li a.blurb-title {
+      color: #248A83;
+      font-size: 1rem;
+      line-height: 1.75;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      line-height: 1.25;
+      letter-spacing: 2px;
+      margin-bottom: 1rem; }
+      ul.journal-entries li a.blurb-title:hover {
+        color: #2f1339; }
+    ul.journal-entries li a.white-button {
+      width: 140px;
+      padding: .5rem 1.5rem; }
+
 .single-product-page {
   width: 1120px;
   margin: 0 auto;
@@ -1013,6 +1098,33 @@ div.adventure-info {
   border-bottom: 1px dashed #c8c8c8;
   padding-bottom: 1rem;
   margin-bottom: 3rem; }
+
+div.comments-area {
+  padding-top: 2rem; }
+
+.comment-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 3rem 1fr 6rem 6rem;
+      grid-template-rows: 3rem 1fr 6rem 6rem;
+  grid-column-gap: 1rem; }
+  .comment-form p:first-child {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2; }
+  .comment-form .comment-form-url {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2; }
+  .comment-form input {
+    width: 100%; }
+  .comment-form input#submit {
+    width: auto; }
+
+.comment-form-comment {
+  padding-bottom: 1rem;
+  -ms-grid-column: span 2;
+      grid-column-start: span 2; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1165,7 +1277,7 @@ div.adventure-info {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Find Us */
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
   display: -ms-grid;
   display: grid;
@@ -1182,6 +1294,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content .journal-article-section:not(:last-child) {
     padding-bottom: 3rem; }
 
+/* About */
 body.page-template-about .entry-header {
   color: #fff;
   display: -ms-flexbox;
@@ -1207,6 +1320,7 @@ body.page-template-about .entry-content {
   body.page-template-about .entry-content h2 {
     text-align: center; }
 
+/* 404 */
 .widget h2 {
   font-size: 1.5rem; }
 
@@ -1222,73 +1336,6 @@ body.page-template-about .entry-content {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 3rem;
   padding-bottom: 1rem; }
-
-.page-template-front-page .site-main {
-  width: 1120px;
-  margin: 0 auto; }
-
-ul.front-page-product-types {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1.5rem; }
-
-.front-page-type {
-  border: 1px solid #e1e1e1;
-  border-top-width: .25rem;
-  text-align: center;
-  padding: .75rem;
-  padding-bottom: 1.5rem; }
-  .front-page-type:hover {
-    border-color: #d99054; }
-  .front-page-type img {
-    width: 70px;
-    height: 70px; }
-  .front-page-type p {
-    padding-bottom: .5rem; }
-
-ul.journal-entries {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1.4rem;
-  width: 100%;
-  margin: 0;
-  padding: 3rem 0; }
-  ul.journal-entries li {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 250px 10rem;
-        grid-template-rows: 250px 10rem;
-    border: 1px solid #e1e1e1; }
-    ul.journal-entries li img {
-      border-bottom: .3rem solid #e1e1e1;
-      height: 250px; }
-    ul.journal-entries li .front-page-journal-blurb {
-      padding: 1rem;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-rows: auto 3fr auto;
-          grid-template-rows: auto 3fr auto; }
-    ul.journal-entries li .date-comments {
-      font-size: .75rem; }
-    ul.journal-entries li a.blurb-title {
-      color: #248A83;
-      font-size: 1rem;
-      line-height: 1.75;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.3rem;
-      line-height: 1.25;
-      letter-spacing: 2px;
-      margin-bottom: 1rem; }
-      ul.journal-entries li a.blurb-title:hover {
-        color: #2f1339; }
-    ul.journal-entries li a.white-button {
-      width: 140px;
-      padding: .5rem 1.5rem; }
 
 .entry-footer a {
   color: #248A83;

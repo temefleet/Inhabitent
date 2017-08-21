@@ -1,0 +1,28 @@
+div.comments-area {
+  padding-top: 2rem;
+}
+
+.comment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3rem 1fr 6rem 6rem;
+  grid-column-gap: 1rem;
+
+  p:first-child {
+    grid-column-start: span 2;
+  }
+  .comment-form-url {
+    grid-column-start: span 2;
+  }
+  input {
+    width: 100%;
+  }
+  input#submit {
+    width: auto;
+  }
+}
+
+.comment-form-comment {
+  padding-bottom: 1rem;
+  grid-column-start: span 2;
+}
