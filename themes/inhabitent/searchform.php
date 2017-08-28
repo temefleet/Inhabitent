@@ -5,6 +5,5 @@
 		</label>
 		<input type="submit" id="search-submit" class="screen-reader-text" value="Search">
 			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
-		</button>
 	</fieldset>
 </form>

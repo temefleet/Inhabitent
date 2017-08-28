@@ -69,7 +69,7 @@ function inhabitent_cpt_product() {
 
 
   // Register Custom Post Type - Adventures
-function custom_post_type() {
+function inhabitent_cpt_adventure() {
   
     $labels = array(
       'name'                  => _x( 'Adventures', 'Post Type General Name', 'text_domain' ),
@@ -126,4 +126,4 @@ function custom_post_type() {
     flush_rewrite_rules();
   
   }
-  add_action( 'init', 'custom_post_type', 0 );
+  add_action( 'init', 'inhabitent_cpt_adventure', 0 );

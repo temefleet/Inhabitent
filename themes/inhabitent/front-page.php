@@ -27,7 +27,8 @@ get_header('dark'); ?>
       <?php foreach ( $product_types as $type ) : setup_postdata( $type ); ?>
         <li class="front-page-type">
           
-          <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $type->slug ?>.svg">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/product-type-icons/<?php echo $type->slug ?>.svg"
+            alt="Products to <?php echo $type->slug ?>">
           <p><?php echo $type->description ?></p>
           
           <a class="green-button"
