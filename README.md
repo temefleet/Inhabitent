@@ -18,7 +18,7 @@ and getting used to the WordPress loop.
 
 #### TODO
 
-* Fix Search Bar which jumps to the to the top when toggled.
+* ~~Fix Search Bar which jumps to the to the top when toggled.~~
 * Clean up CSS. A lot.
 * Clean up PHP and create more consistency across files.
 
